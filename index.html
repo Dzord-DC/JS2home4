@@ -27,13 +27,14 @@
         Two: 'I'll see you next time.'<br>
         One: 'Sure. Bye.'<br>
     </p>
-    <button id="replace"> Заменить </button>
+    <button id="replace">Заменить</button>
+
     <script>
         let text = document.querySelector("p")
         let button = document.getElementById('replace');
         button.addEventListener('click', () => {
             //text.innerText = text.innerText.replace(/'/g, '"');
-            text.innerText = text.innerText.replace(/\B'/g, '"');// если ' не на границе слова, то заменяет на "
+            text.innerText = text.innerText.replace(/\B'/g, '"');// если ' не на границе слова, то заменяет на " 
         });
     </script>
 </body>
